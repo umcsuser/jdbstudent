@@ -7,10 +7,7 @@ import com.google.gson.reflect.TypeToken;
 import com.umcsuser.carrent.db.JdbcConnectionManager;
 import com.umcsuser.carrent.models.Vehicle;
 import com.umcsuser.carrent.repositories.VehicleRepository;
-import java.sql.*;
-import java.util.*;
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+
 
 public class VehicleJdbcRepository implements VehicleRepository {
 
