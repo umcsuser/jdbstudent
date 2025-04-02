@@ -28,8 +28,8 @@ CREATE TABLE rental (
     user_id TEXT NOT NULL,
     rent_date TEXT NOT NULL,
     return_date TEXT,
-    FOREIGN KEY (vehicle_id) REFERENCES vehicle(id),
-    FOREIGN KEY (user_id) REFERENCES users(id)
+    FOREIGN KEY (vehicle_id) REFERENCES vehicle(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
 
